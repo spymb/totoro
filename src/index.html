@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>用CSS画龙猫</title>
+</head>
+
+<body>
+    <div id="tHTML">
+        <div class="container">
+            <div id="totoro">
+                <div class="head">
+                    <div class="ear left-ear"></div>
+                    <div class="ear right-ear"></div>
+                    <div class="eye left-eye">
+                        <div class="pupil left-pupil"></div>
+                    </div>
+                    <div class="eye right-eye">
+                        <div class="pupil right-pupil"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                    <div class="whiskers left-whiskers">
+                        <div class="whisker top-whisker"></div>
+                        <div class="whisker"></div>
+                        <div class="whisker bottom-whisker"></div>
+                    </div>
+                    <div class="whiskers right-whiskers">
+                        <div class="whisker top-whisker"></div>
+                        <div class="whisker"></div>
+                        <div class="whisker bottom-whisker"></div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="belly">
+                        <div class="pattern upper-left-pattern"></div>
+                        <div class="pattern"></div>
+                        <div class="pattern upper-right-pattern"></div>
+                        <div class="pattern lower-left-pattern"></div>
+                        <div class="pattern lower-center-left-pattern"></div>
+                        <div class="pattern lower-center-right-pattern"></div>
+                        <div class="pattern lower-right-pattern"></div>
+                    </div>
+                </div>
+                <div class="arm left-arm">
+                    <div class="nail"></div>
+                    <div class="nail"></div>
+                    <div class="nail"></div>
+                </div>
+                <div class="arm right-arm">
+                    <div class="nail"></div>
+                    <div class="nail"></div>
+                    <div class="nail"></div>
+                </div>
+                <div class="leg left-leg">
+                    <div class="claw"></div>
+                    <div class="claw"></div>
+                    <div class="claw"></div>
+                </div>
+                <div class="leg right-leg">
+                    <div class="claw"></div>
+                    <div class="claw"></div>
+                    <div class="claw"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tCSS"></div>
+    <div id="showCSS"></div>
+    <style>
+        #tHTML {
+            position: fixed;
+            bottom: -30px;
+            right: 75px;
+            width: 50vw;
+            height: 100%;
+        }
+
+        #showCSS {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 40vw;
+            height: 100%;
+            overflow-y: scroll;
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+
+</html>
