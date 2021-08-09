@@ -72,14 +72,6 @@
     <div id="tCSS"></div>
     <div id="showCSS"></div>
     <style>
-        #tHTML {
-            position: fixed;
-            bottom: -30px;
-            right: 75px;
-            width: 50vw;
-            height: 100%;
-        }
-
         #showCSS {
             position: fixed;
             top: 0;
@@ -87,6 +79,41 @@
             width: 40vw;
             height: 100%;
             overflow-y: scroll;
+        }
+        #tHTML {
+            position: fixed;
+            bottom: -30px;
+            right: 75px;
+            width: 50vw;
+            height: 100%;
+        }
+        @media (max-width: 500px) {
+            #showCSS {
+                position: fixed;
+                height: 30vh;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px solid #bdb4b4;
+                overflow-y: auto;
+            }
+            #tHTML {
+                position: fixed;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                height: 80vh;
+            }
+            .container {
+                position: relative;
+                transform: scale(0.7);
+            }
+            .right-arm {
+                right: -15px;
+            }
+            .left-arm {
+                left: -15px;
+            }
         }
     </style>
     <script src="main.js"></script>
