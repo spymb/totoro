@@ -71,7 +71,24 @@
     </div>
     <div id="tCSS"></div>
     <div id="showCSS"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
     <style>
+        #buttons {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
         #showCSS {
             position: fixed;
             top: 0;
@@ -95,17 +112,16 @@
                 left: 0;
                 width: 100%;
                 border-bottom: 1px solid #bdb4b4;
-                overflow-y: auto;
+                overflow-y: scroll;
             }
             #tHTML {
                 position: fixed;
-                bottom: 0px;
+                bottom: -8px;
                 left: 0;
                 width: 100%;
                 height: 80vh;
             }
             .container {
-                position: relative;
                 transform: scale(0.7);
             }
             .right-arm {

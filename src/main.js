@@ -292,9 +292,9 @@ body {
 }
 
 .upper-right-pattern {
-	top: 37px;
-	left: 266px;
-	transform: rotate(75deg);
+	top: 29px;
+	left: 265px;
+	transform: rotate(78deg);
 }
 
 .lower-left-pattern {
@@ -476,4 +476,4 @@ let id = setInterval(() => {
     showCSS.innerText = string.substr(0, n);
     tCSS.innerHTML = string.substr(0, n);
     showCSS.scrollTop = showCSS.scrollHeight;
-}, 1);
+}, 0);
