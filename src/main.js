@@ -503,6 +503,7 @@ btnFast.onclick = () => {
   }, 0);
 };
 btnStop.onclick = () => {
+  window.clearInterval(id)
   showCSS.innerText = string;
   tCSS.innerHTML = string;
 };
