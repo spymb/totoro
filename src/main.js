@@ -466,7 +466,7 @@ let n = 1;
 showCSS.innerText = string.substr(0, n);
 tCSS.innerHTML = string.substr(0, n);
 
-let id = setInterval(() => {
+const run = () => {
   n += 1;
   //当打出完整的string后，就不要再重复打了
   if (n > string.length) {
@@ -476,8 +476,35 @@ let id = setInterval(() => {
   showCSS.innerText = string.substr(0, n);
   tCSS.innerHTML = string.substr(0, n);
   showCSS.scrollTop = showCSS.scrollHeight;
+};
+
+let id = setInterval(() => {
+  run();
 }, 0);
 
 btnPause.onclick = () => {
+  window.clearInterval(id);
+};
+btnPlay.onclick = () => {
+  id = setInterval(() => {
+    run();
+  }, 0);
+};
+btnSlow.onclick = () => {
   window.clearInterval(id)
-}
+  id = setInterval(() => {
+    run();
+  }, 300);
+};
+btnNormal.onclick = () => {
+  window.clearInterval(id)
+  id = setInterval(() => {
+    run();
+  }, 100);
+};
+btnFast.onclick = () => {
+  window.clearInterval(id)
+  id = setInterval(() => {
+    run();
+  }, 0);
+};
