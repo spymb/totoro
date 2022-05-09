@@ -494,12 +494,6 @@ btnSlow.onclick = () => {
   window.clearInterval(id)
   id = setInterval(() => {
     run();
-  }, 300);
-};
-btnNormal.onclick = () => {
-  window.clearInterval(id)
-  id = setInterval(() => {
-    run();
   }, 100);
 };
 btnFast.onclick = () => {
@@ -507,4 +501,8 @@ btnFast.onclick = () => {
   id = setInterval(() => {
     run();
   }, 0);
+};
+btnStop.onclick = () => {
+  showCSS.innerText = string;
+  tCSS.innerHTML = string;
 };
