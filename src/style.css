@@ -7,17 +7,17 @@ body {
 }
 
 .container {
-	border: 1px solid red;
 	position: relative;
-	margin: 100px auto;
-	padding: 30px;
-	max-width: 500px;
+	height: 100vh;
 }
 
 #totoro {
-	border: 1px solid blue;
 	position: relative;
-	cursor: pointer;
+	top: 20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .head {
@@ -230,7 +230,7 @@ body {
 .body {
 	border: 1px solid green;
 	position: absolute;
-	z-index: 1px;
+	z-index: 1;
 	top: 90px;
 	left: 50%;
 	transform: translate(-50%);
@@ -272,13 +272,11 @@ body {
 	border-top-right-radius: 20px;
 	background-color: #bdb4b4;
 }
-
 .pattern {
 	top: 15px;
 	left: calc(50% - 20px);
 	transform: rotate(65deg);
 }
-
 .pattern::after {
 	content: '';
 	top: 11px;
@@ -286,37 +284,31 @@ body {
 	transform-origin: top;
 	transform: rotate(-130deg);
 }
-
 .upper-left-pattern {
 	top: 40px;
 	left: 80px;
 	transform: rotate(50deg);
 }
-
 .upper-right-pattern {
 	top: 37px;
 	left: 266px;
 	transform: rotate(75deg);
 }
-
 .lower-left-pattern {
 	top: 100px;
 	left: 45px;
 	transform: rotate(50deg);
 }
-
 .lower-center-left-pattern {
 	top: 80px;
 	left: 130px;
 	transform: rotate(60deg);
 }
-
 .lower-center-right-pattern {
 	top: 80px;
 	left: 215px;
 	transform: rotate(68deg);
 }
-
 .lower-right-pattern {
 	top: 96px;
 	left: 300px;
@@ -332,9 +324,8 @@ body {
 	background-color: #b3a9a9;
 	transition: 1s;
 }
-
 .left-arm {
-	left: 50px;
+	left: 170px;
 	border-top-left-radius: 35px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 50px 80%;
@@ -342,9 +333,8 @@ body {
 	transform-origin: top left;
 	transform: rotate(35deg);
 }
-
 .right-arm {
-	right: 50px;
+	right: 170px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 30px;
 	border-bottom-left-radius: 40px 65%;
@@ -363,32 +353,26 @@ body {
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 }
-
 .left-arm .nail:nth-child(1) {
 	bottom: -10px;
 	left: 35px;
 }
-
 .left-arm .nail:nth-child(2) {
 	bottom: -13px;
 	left: 47px;
 }
-
 .left-arm .nail:nth-child(3) {
 	bottom: -10px;
 	left: 59px;
 }
-
 .right-arm .nail:nth-child(1) {
 	bottom: -10px;
 	right: 35px;
 }
-
 .right-arm .nail:nth-child(2) {
 	bottom: -13px;
 	right: 47px;
 }
-
 .right-arm .nail:nth-child(3) {
 	bottom: -10px;
 	right: 59px;

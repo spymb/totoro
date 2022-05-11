@@ -35,6 +35,7 @@
                         <div class="whisker bottom-whisker"></div>
                     </div>
                 </div>
+
                 <div class="body">
                     <div class="belly">
                         <div class="pattern upper-left-pattern"></div>
@@ -46,6 +47,7 @@
                         <div class="pattern lower-right-pattern"></div>
                     </div>
                 </div>
+
                 <div class="arm left-arm">
                     <div class="nail"></div>
                     <div class="nail"></div>
@@ -56,6 +58,7 @@
                     <div class="nail"></div>
                     <div class="nail"></div>
                 </div>
+
                 <div class="leg left-leg">
                     <div class="claw"></div>
                     <div class="claw"></div>
@@ -126,6 +129,33 @@
                 height: 80vh;
             }
             .container {
+                transform: scale(0.7);
+            }
+            .right-arm {
+                right: -15px;
+            }
+            .left-arm {
+                left: -15px;
+            }
+        }
+        @media (max-height: 700px) {
+            #showCSS {
+                position: fixed;
+                height: 35vh;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px solid #bdb4b4;
+                overflow-y: scroll;
+            }
+            #tHTML {
+                position: fixed;
+                left: 0;
+                width: 100%;
+                height: 65vh;
+            }
+            .container {
+                margin: 0;
                 transform: scale(0.7);
             }
             .right-arm {
