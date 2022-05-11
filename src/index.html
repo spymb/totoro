@@ -111,7 +111,35 @@
             width: 50vw;
             height: 100%;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 280px) {
+            #showCSS {
+                position: fixed;
+                height: 35vh;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px solid #bdb4b4;
+                overflow-y: scroll;
+            }
+            #tHTML {
+                transform: scale(0.8);
+                position: fixed;
+                bottom: -100px;
+                left: 0;
+                width: 100%;
+                height: 80vh;
+            }
+            .container {
+                transform: scale(0.7);
+            }
+            .right-arm {
+                right: -60px;
+            }
+            .left-arm {
+                left: -60px;
+            }
+        }
+        @media (min-width: 281px) and (max-width: 500px) {
             #showCSS {
                 position: fixed;
                 height: 35vh;
@@ -138,6 +166,30 @@
                 left: -15px;
             }
         }
+        @media (min-width: 501px) and (max-width: 541px) {
+            #tHTML {
+                transform: scale(0.65);
+            }
+            .right-arm {
+                right: -60px;
+            }
+            .left-arm {
+                left: -60px;
+            }
+        }
+        @media (min-width: 1023px) and (max-width: 1281px) {
+            #tHTML {
+                right: 70px;
+                bottom: 60px;
+                transform: scale(0.9);
+            }
+            .right-arm {
+                right: 50px;
+            }
+            .left-arm {
+                left: 50px;
+            }
+        }
         @media (max-height: 668px) {
             #tHTML {
                 bottom: -25px;
@@ -161,6 +213,7 @@
         }
         @media (min-height: 1023px) and (max-height: 1181px) {
             #tHTML {
+                right: 40px;
                 bottom: -180px;
             }
             .right-arm {
@@ -172,6 +225,7 @@
         }
         @media (min-height: 1182px) and (max-height: 1369px) {
             #tHTML {
+                right: 40px;
                 bottom: -250px;
             }
             .right-arm {
