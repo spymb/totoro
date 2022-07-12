@@ -1,3 +1,4 @@
+const string = `<style>
 * {
 	box-sizing: border-box;
 }
@@ -8,20 +9,17 @@ body {
 
 .container {
 	position: relative;
-	height: 100vh;
+	margin: 100px auto;
+	padding: 30px;
+	max-width: 500px;
 }
 
 #totoro {
 	position: relative;
-	top: 20%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	cursor: pointer;
 }
 
 .head {
-	border: 1px solid yellow;
 	position: absolute;
 	z-index: 10;
 	left: 50%;
@@ -228,7 +226,6 @@ body {
 }
 
 .body {
-	border: 1px solid green;
 	position: absolute;
 	z-index: 1;
 	top: 90px;
@@ -272,11 +269,13 @@ body {
 	border-top-right-radius: 20px;
 	background-color: #bdb4b4;
 }
+
 .pattern {
 	top: 15px;
 	left: calc(50% - 20px);
 	transform: rotate(65deg);
 }
+
 .pattern::after {
 	content: '';
 	top: 11px;
@@ -284,31 +283,37 @@ body {
 	transform-origin: top;
 	transform: rotate(-130deg);
 }
+
 .upper-left-pattern {
 	top: 40px;
 	left: 80px;
 	transform: rotate(50deg);
 }
+
 .upper-right-pattern {
-	top: 37px;
-	left: 266px;
-	transform: rotate(75deg);
+	top: 29px;
+	left: 265px;
+	transform: rotate(78deg);
 }
+
 .lower-left-pattern {
 	top: 100px;
 	left: 45px;
 	transform: rotate(50deg);
 }
+
 .lower-center-left-pattern {
 	top: 80px;
 	left: 130px;
 	transform: rotate(60deg);
 }
+
 .lower-center-right-pattern {
 	top: 80px;
 	left: 215px;
 	transform: rotate(68deg);
 }
+
 .lower-right-pattern {
 	top: 96px;
 	left: 300px;
@@ -324,8 +329,9 @@ body {
 	background-color: #b3a9a9;
 	transition: 1s;
 }
+
 .left-arm {
-	left: 170px;
+	left: 50px;
 	border-top-left-radius: 35px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 50px 80%;
@@ -333,8 +339,9 @@ body {
 	transform-origin: top left;
 	transform: rotate(35deg);
 }
+
 .right-arm {
-	right: 170px;
+	right: 50px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 30px;
 	border-bottom-left-radius: 40px 65%;
@@ -353,26 +360,32 @@ body {
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 }
+
 .left-arm .nail:nth-child(1) {
 	bottom: -10px;
 	left: 35px;
 }
+
 .left-arm .nail:nth-child(2) {
 	bottom: -13px;
 	left: 47px;
 }
+
 .left-arm .nail:nth-child(3) {
 	bottom: -10px;
 	left: 59px;
 }
+
 .right-arm .nail:nth-child(1) {
 	bottom: -10px;
 	right: 35px;
 }
+
 .right-arm .nail:nth-child(2) {
 	bottom: -13px;
 	right: 47px;
 }
+
 .right-arm .nail:nth-child(3) {
 	bottom: -10px;
 	right: 59px;
@@ -381,7 +394,7 @@ body {
 .leg {
 	position: absolute;
 	z-index: -1;
-	bottom: -100px;
+	bottom: -520px;
 	width: 150px;
 	height: 70px;
 	background-color: #b3a9a9;
@@ -445,3 +458,6 @@ body {
 	bottom: 0px;
 	right: 120px;
 }
+`;
+
+export default string
