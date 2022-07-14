@@ -1,0 +1,11 @@
+{
+  "name": "totoro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitee.com:spym404/totoro.git",
+  "author": "spymb <spym1933@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css.js": "^0.2.3"
+  }
+}

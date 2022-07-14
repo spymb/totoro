@@ -6,11 +6,11 @@ const string2 = `<style>
             z-index: 10;
             display: flex;
             flex-direction: column;
-            margin-top: 10px;
+            margin-top: 8px;
             margin-right: 10px;
         }
         #buttons > button {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             padding: 4px 8px;
         }
         #showCSS {
